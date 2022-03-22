@@ -51,7 +51,7 @@ const Document = () => (
       <meta name="twitter:image" content="https://ylletjs.github.io/explorer/" />
       <meta name="twitter:card" content="summary" />
     </Head>
-    <body class="h-screen overflow-hidden">
+    <body className="h-screen overflow-hidden">
       <Main />
       <NextScript />
     </body>
