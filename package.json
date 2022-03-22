@@ -24,6 +24,7 @@
     "export": "next export",
     "lint": "next lint && tsc",
     "format": "prettier --single-quote --write 'src/**/*.ts*'",
-    "deploy": "next build && next export && touch out/.nojekyll && REPO=$(git config --get remote.origin.url) && cd out && git init && git add . && git commit -m 'Deployed to Github Pages' && git push --force $REPO master:gh-pages && rimraf out"
+    "deploy": "next build && next export && touch out/.nojekyll && REPO=$(git config --get remote.origin.url) && cd out && git init && git add . && git commit -m 'Deployed to Github Pages' && git push --force $REPO master:gh-pages",
+    "postdeploy": "rimraf out"
   }
 }
